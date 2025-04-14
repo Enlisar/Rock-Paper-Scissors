@@ -1,0 +1,80 @@
+body {
+  background-color: #d6c3c9;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -8px;
+  left: -8px;
+  background-color: #1a1423;
+  color: #eacdc2;
+  font-size: 3rem;
+  height: 5rem;
+  width: 100vw;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+  top: 30px;
+  left: -8px;
+  gap: 210px;
+  height: 16rem;
+}
+
+.icon {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: -4.5rem;
+}
+
+#rock {
+  background-image: url("rock.png");
+}
+
+#paper {
+  background-image: url("paper.png");
+}
+
+#scissor {
+  background-image: url("scissors.png");
+}
+
+.scorecard {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  font-size: 2rem;
+  color: #07090f;
+}
+
+.yourScore {
+  margin-right: 200px;
+  text-align: center;
+}
+.compScore {
+  text-align: center;
+}
+
+.winScreen {
+  position: relative;
+  left: -20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  height: 3rem;
+}
