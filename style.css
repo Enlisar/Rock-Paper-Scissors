@@ -1,50 +1,47 @@
 body {
   background-color: #d6c3c9;
+  margin: 0;
+  padding: 0;
 }
 
 .heading {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -8px;
-  left: -8px;
   background-color: #1a1423;
   color: #eacdc2;
-  font-size: 3rem;
-  height: 5rem;
-  width: 100vw;
+  font-size: 5vw;
+  height: 10vh;
+  width: 100%;
 }
 
 .icon-container {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  position: relative;
-  top: 30px;
-  left: -8px;
-  gap: 210px;
-  height: 16rem;
+  flex-wrap: wrap;
+  gap: 10vw;
+  padding: 5vh 0;
+  width: 100%;
 }
 
 .icon {
-  height: 12rem;
-  width: 12rem;
+  height: 50vw;
+  width: 50vw;
+  max-height: 150px;
+  max-width: 150px;
   border-radius: 50%;
-  border-color: black;
+  border: 2px solid black;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -4.5rem;
+  background-position: center;
 }
 
 #rock {
   background-image: url("rock.png");
 }
-
 #paper {
   background-image: url("paper.png");
 }
-
 #scissor {
   background-image: url("scissors.png");
 }
@@ -52,29 +49,50 @@ body {
 .scorecard {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+  margin: 2vh 0;
 }
 
 p {
-  margin-bottom: 1px;
-  margin-top: 1px;
-  font-size: 2rem;
+  margin: 0.5vh 0;
+  font-size: 5vw;
   color: #07090f;
+  text-align: center;
 }
 
-.yourScore {
-  margin-right: 200px;
-  text-align: center;
-}
+.yourScore,
 .compScore {
   text-align: center;
+  flex: 1;
 }
 
 .winScreen {
-  position: relative;
-  left: -20px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 3rem;
-  height: 3rem;
+  font-size: 6vw;
+  height: 6vh;
+  margin-top: 2vh;
+}
+
+/* Mobile Screens */
+
+@media (max-width: 600px) {
+  .icon {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .heading {
+    font-size: 8.5vw;
+  }
+
+  .winScreen {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 7vw;
+  }
 }
