@@ -10,7 +10,7 @@ body {
   justify-content: center;
   background-color: #1a1423;
   color: #eacdc2;
-  font-size: 5vw;
+  font-size: 4vw;
   height: 10vh;
   width: 100%;
 }
@@ -56,7 +56,7 @@ body {
 
 p {
   margin: 0.5vh 0;
-  font-size: 5vw;
+  font-size: 3vw;
   color: #07090f;
   text-align: center;
 }
@@ -71,7 +71,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 6vw;
+  font-size: 3vw;
   height: 6vh;
   margin-top: 2vh;
 }
