@@ -68,15 +68,14 @@ p {
 }
 
 .winScreen {
+  white-space: pre-line;
+  text-align: center;
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 3vw;
-  height: 6vh;
   margin-top: 2vh;
 }
-
-/* Mobile Screens */
 
 @media (max-width: 600px) {
   .icon {
